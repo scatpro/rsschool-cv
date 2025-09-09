@@ -1,1 +1,1 @@
-https://scatpro.github.io/rsschool-cv/cv
+https://scatpro.github.io/rsschool-cv/
