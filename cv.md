@@ -1,0 +1,51 @@
+﻿# Pavel Ermolov
+
+## Contact
+- Email: scatprof@gmail.com
+- Discord: scat_14195
+- GitHub: https://github.com/scatpro
+
+## About Me
+QA Automation (Manual) Engineer - Web & API Testing 
+Eager to work on challenging projects and expand expertise in automated testing and web development.
+
+## Skills
+- Programming: JavaScript
+- Frameworks: WDIO 
+- Testing: Automation testing (API + UI), Manual testing 
+- Version Control: GitHub, GitLab
+- Methodologies: Agile, Scrum
+- CI/CD: Jenkins
+
+## Code Example
+
+```javascript
+  async dragAndDropDocument() {
+    const sourceElement = await $('//span[@class="p-element document-icon column-icon column-title ng-star-inserted"]'); 
+    const targetElement = await $('//p8-internal-drop-area//div[contains(@class, "internal-drop-area")]'); 
+    const sourceLocation = await sourceElement.getLocation();
+    const targetSize = await targetElement.getSize();
+    const targetLocation = await targetElement.getLocation();
+    const targetX = Math.round(targetLocation.x + (targetSize.width / 2));
+    const targetY = Math.round(targetLocation.y + (targetSize.height / 2));
+      await browser.performActions([{
+        type: 'pointer',
+        id: 'finger1',
+        parameters: { pointerType: 'mouse' },
+          actions: [
+            { type: 'pointerMove', duration: 0, x: Math.round(sourceLocation.x), y: Math.round(sourceLocation.y) }, 
+            { type: 'pointerDown', button: 0 }, 
+            { type: 'pointerMove', duration: 0, x: targetX, y: targetY }, 
+            { type: 'pointerUp', button: 0 } 
+    ]
+    }]);
+  }
+```
+## Experience
+- **Front-End Developer**, RS School (2025) – HTML, CSS, JavaScript  
+  Example of project: [RS School CV Project - GitHub link](https://github.com/scatpro/rsschool-cv/tree/gh-pages)
+## Education
+- **Higher Education**
+## English
+- **Level:** Intermediate (B1). Worked on the English project  
+
